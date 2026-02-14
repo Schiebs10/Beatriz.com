@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beatriz Bertholdo | Professional Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="task-bar">
+    <div class="nav-content">
+      <a href="#" class="logo">BB</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about" key="nav.about">About</a></li>
+          <li><a href="#portfolio" key="nav.portfolio">Experience</a></li>
+          <li><a href="#brands" key="nav.brands">Brands</a></li>
+          <li><a href="#pricing" key="nav.pricing">Services</a></li>
+          <li><a href="#faq" key="nav.faq">FAQ</a></li>
+          <li><a href="#contact" class="cta-btn" key="nav.contact">Contact</a></li>
+        </ul>
+        <button id="lang-toggle" class="lang-toggle" aria-label="Switch Language">
+          <span class="flag-icon">🇺🇸</span>
+          <span class="lang-text" style="display:none">EN</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Beatriz Bertholdo</h1>
+        <p class="subtitle" key="hero.subtitle">Marketing & Communications Specialist | Content, Branding, Community
+          Building & International Partnerships</p>
+        <a href="#about" class="scroll-down">
+          <span key="hero.cta">Explore</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+          </svg>
+        </a>
+      </div>
+      <div class="hero-bg"></div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 key="about.title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p key="about.p1">I am a Marketing & Communications specialist driven by a deep passion for communication,
+              culture, and human connection. I believe in the power of storytelling to create impact, build strong
+              brands, and foster engaged communities.</p>
+            <p key="about.p2">With over 7 years of experience in content strategy, branding, inbound marketing,
+              community building, and partnerships, I have supported brands and organizations across Brazil, Latin
+              America, the United States, and Portugal. Brazilian-born, world-hearted, I strive to connect data, human
+              behavior, and strategic communication.</p>
+          </div>
+          <div class="about-image">
+            <div class="placeholder-img">Beatriz Bertholdo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 key="portfolio.title">Professional Experience</h2>
+        <div class="portfolio-grid" id="experience-grid">
+          <!-- Dynamic Content -->
+        </div>
+      </div>
+    </section>
+
+    <section id="brands" class="section">
+      <div class="container">
+        <h2 key="brands.title">Brands I've Worked With</h2>
+        <div class="brands-grid">
+          <div class="brand-item">Bertholdo</div>
+          <div class="brand-item">Coleguium</div>
+          <div class="brand-item">Group Software</div>
+          <div class="brand-item">PUC Minas</div>
+          <div class="brand-item">PUC RS</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2 key="pricing.title">Services & Solutions</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 key="pricing.card1.title">Strategy Consultation</h3>
+            <p class="price" key="pricing.card1.price">Custom</p>
+            <ul class="features">
+              <li key="pricing.card1.features.0">Brand Audit</li>
+              <li key="pricing.card1.features.1">Market Positioning</li>
+              <li key="pricing.card1.features.2">Strategic Roadmap</li>
+            </ul>
+            <a href="#contact" class="btn" key="hero.cta">Get Started</a>
+          </div>
+          <div class="pricing-card popular">
+            <h3 key="pricing.card2.title">Content & Branding</h3>
+            <p class="price" key="pricing.card2.price">Project Based</p>
+            <ul class="features">
+              <li key="pricing.card2.features.0">Visual Identity</li>
+              <li key="pricing.card2.features.1">Content Strategy</li>
+              <li key="pricing.card2.features.2">Social Media Management</li>
+            </ul>
+            <a href="#contact" class="btn" key="hero.cta">Get Started</a>
+          </div>
+          <div class="pricing-card">
+            <h3 key="pricing.card3.title">Community Building</h3>
+            <p class="price" key="pricing.card3.price">Retainer</p>
+            <ul class="features">
+              <li key="pricing.card3.features.0">Engagement Strategy</li>
+              <li key="pricing.card3.features.1">Partnerships</li>
+              <li key="pricing.card3.features.2">Event Management</li>
+            </ul>
+            <a href="#contact" class="btn" key="hero.cta">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 key="faq.title">FAQ</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" key="faq.q1">What regions do you serve?</button>
+            <div class="faq-answer">
+              <p key="faq.a1">I work with clients globally, with specific experience in Brazil, Latin America, the US,
+                and Portugal.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" key="faq.q2">Do you offer bilingual services?</button>
+            <div class="faq-answer">
+              <p key="faq.a2">Yes, I provide services in English, Portuguese, and have experience in multicultural
+                environments.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" key="faq.q3">How can we collaborate?</button>
+            <div class="faq-answer">
+              <p key="faq.a3">You can reach out via the contact form to schedule an initial consultation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 key="contact.title">Get in Touch</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message!');">
+          <div class="form-group">
+            <label for="name" key="contact.namePlaceholder">Name</label>
+            <input type="text" id="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email" key="contact.emailPlaceholder">Email</label>
+            <input type="email" id="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message" key="contact.messagePlaceholder">Message</label>
+            <textarea id="message" rows="5" required placeholder="How can I help you?"></textarea>
+          </div>
+          <button type="submit" class="btn submit-btn" key="contact.submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Beatriz Bertholdo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
