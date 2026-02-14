@@ -43,12 +43,15 @@ document.addEventListener('DOMContentLoaded', () => {
             `).join('');
         }
 
-        // Update Flag
+        // Update Flag and Text
+        const langText = langToggle.querySelector('.lang-text');
         if (lang === 'en') {
             flagIcon.innerText = '🇺🇸';
+            langText.innerText = 'EN';
             langToggle.setAttribute('aria-label', 'Switch to Portuguese');
         } else {
             flagIcon.innerText = '🇧🇷';
+            langText.innerText = 'PT';
             langToggle.setAttribute('aria-label', 'Switch to English');
         }
     }
