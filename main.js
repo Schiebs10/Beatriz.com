@@ -4,7 +4,7 @@ import { translations } from './translations.js'
 document.addEventListener('DOMContentLoaded', () => {
     // Language Toggle
     const langToggle = document.getElementById('lang-toggle');
-    const flagIcon = langToggle.querySelector('.flag-icon');
+    // flagIcon removed as we now handle multiple icons dynamically
     let currentLang = 'en';
 
     function updateContent(lang) {
@@ -44,14 +44,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Update Flag and Text
-        const langText = langToggle.querySelector('.lang-text');
+        // Update Language Toggle Button (Switch Sides)
+        const leftOption = document.getElementById('lang-left');
+        const rightOption = document.getElementById('lang-right');
+
         if (lang === 'en') {
-            flagIcon.innerText = '🇺🇸';
-            langText.innerText = 'EN';
+            // Left: PT (Inactive)
+            leftOption.innerHTML = '<span class="lang-text">PT</span><span class="flag-icon">🇧🇷</span>';
+            leftOption.classList.remove('active');
+
+            // Right: EN (Active)
+            rightOption.innerHTML = '<span class="lang-text">EN</span><span class="flag-icon">🇺🇸</span>';
+            rightOption.classList.add('active');
+
             langToggle.setAttribute('aria-label', 'Switch to Portuguese');
         } else {
-            flagIcon.innerText = '🇧🇷';
-            langText.innerText = 'PT';
+            // Left: EN (Inactive)
+            leftOption.innerHTML = '<span class="lang-text">EN</span><span class="flag-icon">🇺🇸</span>';
+            leftOption.classList.remove('active');
+
+            // Right: PT (Active)
+            rightOption.innerHTML = '<span class="lang-text">PT</span><span class="flag-icon">🇧🇷</span>';
+            rightOption.classList.add('active');
+
             langToggle.setAttribute('aria-label', 'Switch to English');
         }
     }

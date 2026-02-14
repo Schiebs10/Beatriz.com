@@ -165,21 +165,43 @@ ul {
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   font-size: 0.9rem;
   transition: var(--transition);
   padding: 5px 12px;
   border-radius: 4px;
+  min-width: 100px;
 }
 
 .lang-toggle:hover {
   border-color: var(--black);
 }
 
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  opacity: 0.5;
+  transition: var(--transition);
+}
+
+.lang-option.active {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.lang-separator {
+  color: var(--border-color);
+  font-weight: 300;
+  margin: 0 2px;
+}
+
 .flag-icon {
   font-size: 1.2rem;
   border-radius: 50%;
   object-fit: cover;
+  line-height: 1;
 }
 
 .lang-text {
