@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# If you need to handle client-side routing (SPA), uncomment the following:
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
